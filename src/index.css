@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hero {
+  background-image: url('/cloud-3.jpg');
+}
+
+.hero-title {
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 800;
+  position: relative;
+  z-index: 30;
+}
+.house-wrapper {
+  position: relative;
+  z-index: 20;
+}
+
+.house-stage {
+  position: relative;
+  width: min(60vw, 900px);
+}
+
+.house-image {
+  display: block;
+  position: relative;
+  z-index: 20;
+  width: 50%;
+  max-width: 90%;
+  height: auto;
+  filter: drop-shadow(0 24px 32px rgba(15, 23, 42, 0.14));
+}
+
+.cutout {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  background: url('./Screenshot_20261017-075400.png') center / cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.identity-text p {
+  color: #b8b8b8;
+  font-size: 18px;
+  font-weight: 400;
+}
